@@ -1,0 +1,38 @@
+INSERT INTO subgenres (name) VALUES ("Magical Fantasy");
+INSERT INTO authors (name) VALUES ("JK Rowling");
+INSERT INTO series (title, author_id, subgenre_id) VALUES ("Harry Potter", 1, 1);
+INSERT INTO books (title, year, series_id) VALUES ("Sorcerers Stone", 1999, 1);
+INSERT INTO books (title, year, series_id) VALUES ("Chamber of Secrets", 2000, 1);
+INSERT INTO books (title, year, series_id) VALUES ("Prizoner of Azkaban", 2001, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Harry", "angst", "dude", 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Hedwig", "hoot", "owl", 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Snape", "snivvelus", "grease", 1, 1);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Dumbledor", "wisdom", "wizard", 1, 1);
+
+INSERT INTO subgenres (name) VALUES ("SciFi");
+INSERT INTO authors (name) VALUES ("Orsen Scott Card");
+INSERT INTO series (title, author_id, subgenre_id) VALUES ("Enders Game", 2, 2);
+INSERT INTO books (title, year, series_id) VALUES ("Enders Game", 1989, 2);
+INSERT INTO books (title, year, series_id) VALUES ("Enders Shadow", 1991, 2);
+INSERT INTO books (title, year, series_id) VALUES ("Shadow Hegimon Something", 1993, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Ender", "kick them til they dont get up", "kid", 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Bean", "just keep growing", "boyman", 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Val", "love", "girl", 2, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Bonzo", "kill", "bully", 2, 2);
+
+INSERT INTO character_books (book_id, character_id) VALUES (1, 1);
+INSERT INTO character_books (book_id, character_id) VALUES (2, 1);
+INSERT INTO character_books (book_id, character_id) VALUES (3, 1);
+INSERT INTO character_books (book_id, character_id) VALUES (1, 2);
+INSERT INTO character_books (book_id, character_id) VALUES (2, 2);
+INSERT INTO character_books (book_id, character_id) VALUES (3, 2);
+INSERT INTO character_books (book_id, character_id) VALUES (2, 3);
+INSERT INTO character_books (book_id, character_id) VALUES (1, 4);
+INSERT INTO character_books (book_id, character_id) VALUES (4, 5);
+INSERT INTO character_books (book_id, character_id) VALUES (5, 5);
+INSERT INTO character_books (book_id, character_id) VALUES (6, 5);
+INSERT INTO character_books (book_id, character_id) VALUES (4, 6);
+INSERT INTO character_books (book_id, character_id) VALUES (5, 6);
+INSERT INTO character_books (book_id, character_id) VALUES (6, 6);
+INSERT INTO character_books (book_id, character_id) VALUES (1, 7);
+INSERT INTO character_books (book_id, character_id) VALUES (2, 8);
